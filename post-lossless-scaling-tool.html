@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>小黄鸭Lossless Scaling无损缩放补帧生成工具详解</title>
+    <meta name="description" content="小黄鸭Lossless Scaling是一款强大的窗口无损放大与补帧生成工具，可在缩放画面的同时将帧数倍增，适用于游戏、模拟器、视频与网页等窗口化程序。">
+    <meta name="keywords" content="Lossless Scaling, 小黄鸭, 无损缩放, 补帧生成, LSFG3.0, LS1, 2倍 20倍, 240帧, 10K, 窗口化">
+    <link rel="canonical" href="https://www.losslessscal.com/post-lossless-scaling-tool.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="小黄鸭Lossless Scaling无损缩放补帧生成工具详解">
+    <meta property="og:description" content="窗口无损放大与补帧生成，游戏与视频流畅度显著提升。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.losslessscal.com/post-lossless-scaling-tool.html">
+    <meta property="og:image" content="https://via.placeholder.com/800x450?text=Lossless+Scaling+Tool">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <!-- BlogPosting JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "小黄鸭Lossless Scaling无损缩放补帧生成工具详解",
+      "description": "窗口无损放大与补帧生成工具的详细介绍与使用方法，涵盖LSFG3.0与LS1等关键设置。",
+      "image": "https://via.placeholder.com/800x450?text=Lossless+Scaling+Tool",
+      "datePublished": "2025-11-03",
+      "dateModified": "2025-11-03",
+      "author": {"@type": "Person", "name": "编辑部"},
+      "publisher": {"@type": "Organization", "name": "小黄鸭拼好帧"},
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.losslessscal.com/post-lossless-scaling-tool.html"}
+    }
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="/">小黄鸭拼好帧</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="切换导航">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="/">主页</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">博客</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <nav aria-label="面包屑" class="mb-3">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">主页</a></li>
+          <li class="breadcrumb-item"><a href="blog.html">博客</a></li>
+          <li class="breadcrumb-item active" aria-current="page">小黄鸭Lossless Scaling详解</li>
+        </ol>
+      </nav>
+
+      <article class="mx-auto" style="max-width: 900px;">
+        <header class="mb-4">
+          <h1 class="h2">小黄鸭Lossless Scaling游戏无损缩放补帧生成工具详解</h1>
+          <p class="text-secondary">作者：编辑部 · 发布于 2025-11-03</p>
+        </header>
+
+        <!-- 正文内容（整合用户提供的段落与图片，优化为Bootstrap结构） -->
+        <section class="content">
+          <p>小黄鸭Lossless Scaling游戏无损缩放补帧生成工具（免登录、无广告），是一款功能强大的窗口无损放大与补帧生成工具。它可以将低分辨率的游戏画面进行有效拉伸，并在缩放的同时将游戏帧数成倍增强。</p>
+
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="Lossless Scaling 主界面示意图1" src="images/post-lossless-scaling-tool-01.jpg">
+          </figure>
+
+          <p>放大提升的倍数在 2 倍到 20 倍范围内，可轻松将 1080p 提升到 4K 乃至更高：</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="分辨率提升示意" src="images/post-lossless-scaling-tool-02.jpg">
+          </figure>
+
+          <p>帧率方面，60 帧提升到 240 帧甚至更高也能轻松实现：</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="帧率倍增示意" src="images/post-lossless-scaling-tool-03.jpg">
+          </figure>
+
+          <p>不止游戏，Lossless Scaling 同样支持各种模拟器、视频文件与网页。简单来说，只要是窗口化或无边框运行的程序，都可以进行有效提升。</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="适用范围示意" src="images/post-lossless-scaling-tool-04.jpg">
+          </figure>
+
+          <p>使用非常简单：解压后运行根目录下的 .exe 文件即可进入主界面。</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="工具主界面" src="images/post-lossless-scaling-tool-05.jpg">
+          </figure>
+
+          <p>核心功能主要有两块：帧生成与分辨率缩放。</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="帧生成与缩放功能示意" src="images/post-lossless-scaling-tool-06.jpg">
+          </figure>
+
+          <p>前者用于提升运行帧率，后者用于放大分辨率：</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="帧生成设置示意" src="images/post-lossless-scaling-tool-07.jpg">
+          </figure>
+
+          <p>在帧生成的类型中，建议选择较新的 LSFG3.0：</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="LSFG3.0 选项示意" src="images/post-lossless-scaling-tool-08.jpg">
+          </figure>
+
+          <p>模式提供 2/3/4 倍与自定义，原有 60 帧使用 4 倍可达 240 帧，自定义可到 20 倍：</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="倍数模式选择示意" src="images/post-lossless-scaling-tool-09.jpg">
+          </figure>
+
+          <p>缩放类型中推荐选择较新的 LS1；模式一般选择自动，8K 屏可自定义到 10 倍，1080p 也能上到 10K：</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="LS1 缩放设置示意" src="images/post-lossless-scaling-tool-10.jpg">
+          </figure>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="10倍缩放示意" src="images/post-lossless-scaling-tool-11.jpg">
+          </figure>
+
+          <p>渲染选项中的垂直同步建议关闭，否则可能被桌面刷新率（如 60Hz）锁定在 60 帧。</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="垂直同步设置示意" src="images/post-lossless-scaling-tool-12.jpg">
+          </figure>
+
+          <p>建议在设置中记住缩放快捷键（默认 Ctrl + Alt + S），也可自定义。</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="快捷键设置示意" src="images/post-lossless-scaling-tool-13.jpg">
+          </figure>
+
+          <p>实操示例：默认 1080P、60 帧的游戏，一键缩放补帧后，分辨率与帧率同步提升。</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="游戏缩放补帧前后对比1" src="images/post-lossless-scaling-tool-14.jpg">
+          </figure>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="游戏缩放补帧前后对比2" src="images/post-lossless-scaling-tool-15.jpg">
+          </figure>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="分辨率与帧率提升效果" src="images/post-lossless-scaling-tool-16.jpg">
+          </figure>
+
+          <p>再次按下 Ctrl + Alt + S 即可结束优化并返回原窗口，操作相当简单。</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="结束优化返回原窗口示意" src="images/post-lossless-scaling-tool-17.jpg">
+          </figure>
+
+          <p>除游戏外，也可提升模拟器、视频播放器与网页的表现效果；例如针对动漫的 4K 预设类型直观易用。</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="动漫提升预设示意" src="images/post-lossless-scaling-tool-18.jpg">
+          </figure>
+
+          <p>配置文件可自定义以适配不同场景；可新增专用配置为视频进行缩放与补帧。</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="新增配置文件示意1" src="images/post-lossless-scaling-tool-19.jpg">
+          </figure>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="新增配置文件示意2" src="images/post-lossless-scaling-tool-20.jpg">
+          </figure>
+
+          <p>工具简单实用，无任何干扰影响体验；对怀旧经典游戏玩家意义非凡。感兴趣的朋友不妨一试！</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="怀旧游戏效果示意" src="images/post-lossless-scaling-tool-21.jpg">
+          </figure>
+        </section>
+
+        <hr class="my-4">
+        <div class="d-flex justify-content-between">
+          <a href="blog.html" class="btn btn-outline-secondary">返回博客</a>
+          <a href="/" class="btn btn-primary">回到主页</a>
+        </div>
+      </article>
+    </main>
+
+    <footer class="py-4 border-top">
+      <div class="container text-center">
+        <small class="text-secondary">© 2025 小黄鸭拼好帧</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>

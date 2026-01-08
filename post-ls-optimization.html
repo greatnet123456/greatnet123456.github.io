@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lossless Scaling 游戏优化实战指南：缩放与补帧</title>
+    <meta name="description" content="通过Lossless Scaling进行窗口无损缩放与补帧，让老游戏与低配设备也能获得更清晰更流畅的体验。">
+    <meta name="keywords" content="Lossless Scaling, 游戏优化, 无损缩放, 补帧, LSFG, LS1, 窗口化, 老游戏">
+    <link rel="canonical" href="https://www.losslessscal.com/post-ls-optimization.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Lossless Scaling 游戏优化实战指南：缩放与补帧">
+    <meta property="og:description" content="兼容性高的优化方案：缩放算法与补帧，改善清晰度与流畅度。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.losslessscal.com/post-ls-optimization.html">
+    <meta property="og:image" content="https://via.placeholder.com/800x450?text=LS+Optimization">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <!-- BlogPosting JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Lossless Scaling 游戏优化实战指南：缩放与补帧",
+      "description": "通过缩放与补帧让更多设备获得清晰与流畅的游戏体验。",
+      "image": "https://via.placeholder.com/800x450?text=LS+Optimization",
+      "datePublished": "2025-11-04",
+      "dateModified": "2025-11-04",
+      "author": {"@type": "Person", "name": "编辑部"},
+      "publisher": {"@type": "Organization", "name": "小黄鸭拼好帧"},
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.losslessscal.com/post-ls-optimization.html"}
+    }
+    </script>
+  </head>
+  <body>
+    <!-- 导航 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="/">小黄鸭拼好帧</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="切换导航">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="/">主页</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">博客</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <nav aria-label="面包屑" class="mb-3">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">主页</a></li>
+          <li class="breadcrumb-item"><a href="blog.html">博客</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Lossless Scaling 优化指南</li>
+        </ol>
+      </nav>
+
+      <article class="mx-auto" style="max-width: 900px;">
+        <header class="mb-4">
+          <h1 class="h2">Lossless Scaling 游戏优化实战指南：缩放与补帧</h1>
+          <p class="text-secondary">作者：编辑部 · 发布于 2025-11-04</p>
+        </header>
+
+        <section class="content">
+          <p>在玩游戏的时候，会遇到一些分辨率不够以及帧数过低的情况，游戏观感与操作手感都不理想。修改配置文件虽然可行，但常带来不可预期的问题。那么有没有兼容性更高、体验更稳定的优化方式？</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="问题场景示意1" src="images/post-ls-optimization-01.jpg">
+          </figure>
+
+          <p>Lossless Scaling 正是这样一款工具。它综合使用缩放、锐化与机器学习等算法，将“实际渲染分辨率”与“显示分辨率”分离处理，在保持观感的同时提升流畅度。</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="界面示意1" src="images/post-ls-optimization-02.jpg">
+          </figure>
+
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="界面示意2" src="images/post-ls-optimization-03.jpg">
+          </figure>
+
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="设置示意1" src="images/post-ls-optimization-04.png">
+          </figure>
+
+          <p>在侧边设置中可以调整功能细节，将鼠标悬停在开关上会显示功能解释。</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="设置GIF1" src="images/post-ls-optimization-05.gif">
+          </figure>
+
+          <p>启用方式有两种：添加常用游戏进行自动处理，或使用默认快捷键 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>。</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="设置示意2" src="images/post-ls-optimization-06.png">
+          </figure>
+
+          <p>软件需以窗口化模式运行。以下以老游戏“超级街霸2”为例，未处理时即便全屏两侧也会留边框：</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="留边框示意" src="images/post-ls-optimization-07.jpg">
+          </figure>
+
+          <p>使用 Lossless Scaling 后，可以让内容填充屏幕：</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="全屏填充示意" src="images/post-ls-optimization-08.jpg">
+          </figure>
+
+          <p>在 4K 显示器下，许多老游戏锯齿明显。通过缩放可显著改善画质，实际观感提升比截图更明显（右侧为优化后）：</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="对比示意" src="images/post-ls-optimization-09.png">
+          </figure>
+
+          <p>调整后会出现倒计时，需要在倒计时内激活游戏窗口：</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="倒计时示意" src="images/post-ls-optimization-10.gif">
+          </figure>
+
+          <p>再以经典游戏“植物大战僵尸”老版本为例，如不开全屏窗口极小，观感不佳：</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="窗口过小示意" src="images/post-ls-optimization-11.png">
+          </figure>
+
+          <p>强行全屏会导致模糊。简单设置后，清晰度与文字可读性显著改善（左：未处理；右：处理后）：</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="清晰度对比" src="images/post-ls-optimization-12.png">
+          </figure>
+
+          <p>一个非常重要的选项：首次使用建议勾选该项以避免“涂了黄油”般的指针延迟；若在 FPS 射击中感觉手感受影响，再取消勾选：</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="重要选项示意" src="images/post-ls-optimization-13.png">
+          </figure>
+
+          <p>官方手册建议：2D 像素风格使用整数/近邻缩放，现代 3D 游戏推荐 AMD FSR 或 NIS：</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="手册建议示意" src="images/post-ls-optimization-14.png">
+          </figure>
+
+          <p>具体采用哪种缩放需要结合游戏实际。若仅改善观感，勾选“宽高比”即可；相比强制全屏的拉伸，画面更自然：</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="宽高比设置GIF" src="images/post-ls-optimization-15.gif">
+          </figure>
+
+          <p>部分游戏无窗口化选项，可借助 DxWnd 强制窗口化以配合 Lossless Scaling：</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="强制窗口化GIF" src="images/post-ls-optimization-16.gif">
+          </figure>
+
+          <p>DxWnd 配置示例：</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="DxWnd 配置1" src="images/post-ls-optimization-17.png">
+          </figure>
+
+          <p>Lossless Scaling 也可用于软件窗口、观看动漫与电影的场景，能带来一定改善：</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="表情图标" src="images/post-ls-optimization-emoji-cold.png" style="width:32px;height:32px">
+          </figure>
+
+          <p>更多动效演示：</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="演示GIF" src="images/post-ls-optimization-18.gif">
+          </figure>
+
+          <p>总体而言，该工具轻量实用。Steam 有付费版，但免费版已能满足多数需求。项目下载备份值得保留：</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="页面示意1" src="images/post-ls-optimization-19.png">
+          </figure>
+
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="页面示意2" src="images/post-ls-optimization-20.png">
+          </figure>
+
+          <p>在官方介绍中，优质调教可显著提升帧率，例如在接近 1440P 观感时帧率从 48 提升至 76：</p>
+          <figure class="text-center mb-4">
+            <img class="img-fluid rounded" alt="帧率对比示意" src="images/post-ls-optimization-21.png">
+          </figure>
+
+          <p>对于显卡性能有限的玩家，Lossless Scaling 不能完全替代原生分辨率，但通过合理设置，仍能显著改善体验。</p>
+        </section>
+
+        <hr class="my-4">
+        <div class="d-flex justify-content-between">
+          <a href="blog.html" class="btn btn-outline-secondary">返回博客</a>
+          <a href="/" class="btn btn-primary">回到主页</a>
+        </div>
+      </article>
+    </main>
+
+    <footer class="py-4 border-top">
+      <div class="container text-center">
+        <small class="text-secondary">© 2025 小黄鸭拼好帧</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>

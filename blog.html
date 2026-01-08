@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>博客列表 - 小黄鸭拼好帧（Lossless Scaling）</title>
+    <meta name="description" content="阅读Lossless Scaling（小黄鸭拼好帧）的使用技巧、性能实测与优化方案，帮助你在不同硬件条件下获得更高的流畅度。">
+    <meta name="keywords" content="Lossless Scaling 博客, 插帧教程, 分辨率缩放, 低配优化, Windows掌机, 游戏性能">
+    <link rel="canonical" href="https://www.losslessscal.com/blog.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="博客列表 - 小黄鸭拼好帧（Lossless Scaling）">
+    <meta property="og:description" content="技巧、实测与优化指南，助你更丝滑地游玩与观影。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.losslessscal.com/blog.html">
+    <meta property="og:image" content="https://via.placeholder.com/800x450?text=Lossless+Scaling+Blog">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <!-- BreadcrumbList JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "主页", "item": "https://www.losslessscal.com/"},
+        {"@type": "ListItem", "position": 2, "name": "博客", "item": "https://www.losslessscal.com/blog.html"}
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <!-- 导航 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="/">小黄鸭拼好帧</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="切换导航">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="/">主页</a></li>
+            <li class="nav-item"><a class="nav-link active" href="blog.html">博客</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <nav aria-label="面包屑" class="mb-3">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">主页</a></li>
+          <li class="breadcrumb-item active" aria-current="page">博客</li>
+        </ol>
+      </nav>
+
+      <header class="mb-4">
+        <h1 class="h3">博客列表</h1>
+        <p class="text-secondary">实测、教程与优化建议，持续更新。</p>
+      </header>
+
+      <div class="row g-4">
+        <!-- 文章卡片示例 -->
+        <div class="col-md-6">
+          <article class="card h-100">
+            <img src="images/2.jpg" class="card-img-top" alt="性能测试示意图">
+            <div class="card-body">
+              <h3 class="h5"><a class="text-decoration-none" href="post-ls-optimization.html">使用Lossless Scaling让低配更丝滑：实测与技巧</a></h3>
+              <p class="card-text">结合插帧与分辨率缩放，在R7 7840HS + Radeon 780M平台下将平均帧率从30fps提升到接近60fps，甚至在“高特效”下达到80fps以上。</p>
+            </div>
+            <div class="card-footer bg-white">
+              <small class="text-secondary">发布于 2025-11-04 · 阅读 10 分钟</small>
+            </div>
+          </article>
+        </div>
+
+        <!-- 新文章卡片：Lossless Scaling 工具详解 -->
+        <div class="col-md-6">
+          <article class="card h-100">
+            <img src="images/1.jpg" class="card-img-top" alt="Lossless Scaling 工具示意图">
+            <div class="card-body">
+              <h3 class="h5"><a class="text-decoration-none" href="post-lossless-scaling-tool.html">小黄鸭Lossless Scaling无损缩放补帧生成工具详解</a></h3>
+              <p class="card-text">免登录、无广告的窗口无损放大与补帧生成工具，支持LSFG3.0与LS1等设置，游戏、模拟器与视频窗口均可显著提升。</p>
+            </div>
+            <div class="card-footer bg-white">
+              <small class="text-secondary">发布于 2025-11-03 · 阅读 10 分钟</small>
+            </div>
+          </article>
+        </div>
+
+        <!-- 新文章卡片：常见问题解答（持续更新） -->
+        <div class="col-md-6">
+          <article class="card h-100">
+            <img src="images/banner.jpg" class="card-img-top" alt="FAQ 常见问题示意图">
+            <div class="card-body">
+              <h3 class="h5"><a class="text-decoration-none" href="post-ls-faq.html">小黄鸭常见问题解答（持续更新）</a></h3>
+              <p class="card-text">覆盖显示帧数偏差、HDR自动开启、窗口化黑屏、字幕撕裂、仅超分不补帧等问题的解决方案汇总。</p>
+            </div>
+            <div class="card-footer bg-white">
+              <small class="text-secondary">发布于 2025-11-08 · 阅读 6 分钟</small>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <footer class="py-4 border-top">
+      <div class="container text-center">
+        <small class="text-secondary">© 2025 小黄鸭拼好帧</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>

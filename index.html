@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>小黄鸭拼好帧（Lossless Scaling）- 绿色版下载及详情使用教程</title>
+    <meta name="description" content="Lossless Scaling（小黄鸭拼好帧）通过插帧与分辨率缩放显著提升游戏与视频的流畅度，适用于低配到中高配设备。本站提供详尽介绍、教程与下载入口。">
+    <meta name="keywords" content="Lossless Scaling, 小黄鸭, 插帧, 帧生成, 分辨率缩放, LSFG3.0, LS1, 游戏补帧, 视频补帧">
+    <link rel="canonical" href="https://www.losslessscal.com/">
+    <link rel="icon" href="https://www.losslessscal.com/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+      html { scroll-behavior: smooth; }
+      body { background:#f6f8fb; }
+      :root {
+        --primary:#0d6efd; --dark:#0b1020; --dark2:#0d1b2a; --muted:#f8f9fa;
+      }
+      .hero {
+        background: linear-gradient(120deg, var(--dark2), var(--dark), #000);
+        background-size: 200% 200%;
+        animation: gradientShift 12s ease infinite;
+        color: #fff; padding: 5rem 0;
+      }
+      @keyframes gradientShift {
+        0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}
+      }
+      .feature-card { transition: transform .2s ease, box-shadow .2s ease; }
+      .feature-card:hover { transform: translateY(-4px) scale(1.02); box-shadow: 0 10px 24px rgba(0,0,0,.12); }
+      /* 统一奇偶交替背景（包含下载与 FAQ 板块） */
+      section.section-pad:nth-of-type(odd) { background:#ffffff; }
+      section.section-pad:nth-of-type(even) { background:#f7f8fa; }
+      /* 统一标题样式与间距 */
+      .section-pad { padding: 4.5rem 0; }
+      .section-title { font-weight:700; margin-bottom:.75rem; position:relative; }
+      h2 { text-align: center; }
+      .section-desc { color:#6c757d; margin-bottom:1.5rem; text-align:center; }
+      .section-anchor { scroll-margin-top: 90px; }
+      .gradient-text { background: linear-gradient(90deg,#60a5fa,#a78bfa); -webkit-background-clip:text; background-clip:text; color:transparent; }
+      /* 卡片细节 */
+      .card-soft { border:1px solid rgba(13,110,253,.08); }
+      /* 场景图标与卡片 */
+      .scenario-icon { width: 88px; height: 88px; border-radius: 16px; background:#eef2f7; color: var(--primary); display:flex; align-items:center; justify-content:center; font-size:44px; }
+      .scenario-card { background:#ffffff; border-radius:16px; padding:1.25rem; box-shadow: 0 2px 10px rgba(0,0,0,.06); height:100%; }
+      /* 返回顶部按钮 */
+      #backToTop { position:fixed; right:24px; bottom:24px; width:44px; height:44px; border-radius:50%; display:none; align-items:center; justify-content:center; }
+      #backToTop.show { display:flex; }
+
+      /* #download 使用 .faq-section 深色背景，保持不变 */
+    </style>
+
+    <!-- SoftwareApplication JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Lossless Scaling（小黄鸭拼好帧）",
+      "alternateName": "小黄鸭拼好帧",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Windows",
+      "description": "通过插帧与分辨率缩放提升游戏与视频的流畅度。",
+      "url": "https://www.losslessscal.com/",
+      "image": "https://via.placeholder.com/800x450?text=Lossless+Scaling",
+      "publisher": {"@type": "Organization","name": "Lossless Scaling"}
+    }
+    </script>
+    
+    
+    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+    <script>LA.init({id:"Kzqh9DaOHyX4WSQO",ck:"Kzqh9DaOHyX4WSQO"})</script>
+    
+  </head>
+  <body>
+    <!-- 导航 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="/">小黄鸭拼好帧</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="切换导航">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="/">主页</a></li>
+            <li class="nav-item"><a class="nav-link" href="#intro">简介</a></li>
+            <li class="nav-item"><a class="nav-link" href="#features">功能</a></li>
+            <li class="nav-item"><a class="nav-link" href="#scenarios">适用场景</a></li>
+            <li class="nav-item"><a class="nav-link" href="#cautions">注意事项</a></li>
+            <li class="nav-item"><a class="nav-link" href="#reviews">评价</a></li>
+            <li class="nav-item"><a class="nav-link" href="#guide">教程</a></li>
+            <li class="nav-item"><a class="nav-link" href="#download">下载</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">博客</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 1. Hero / 引导区 -->
+    <header class="hero" id="hero">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold gradient-text">小黄鸭 / Lossless Scaling</h1>
+            <p class="lead">提升游戏画质与流畅度的利器</p>
+            <div class="d-flex gap-3">
+              <a href="#intro" class="btn btn-outline-light btn-lg"><i class="bi bi-info-circle"></i> 了解更多</a>
+              <a href="#download" class="btn btn-primary btn-lg"><i class="bi bi-download"></i> 立即下载</a>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center">
+            <img src="images/banner.jpg" class="img-fluid rounded" alt="Lossless Scaling 软件示意图">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. 软件介绍 -->
+    <section id="intro" class="section-pad section-anchor">
+      <div class="container text-center">
+        <h2 class="section-title h3">软件介绍</h2>
+        <p class="section-desc">
+          Lossless Scaling 小黄鸭是一款用于缩放和帧生成的一体化游戏实用程序，支持无损缩放使游戏窗口无边框，并使用整数乘数将其缩放到全屏，输出图像保持其原始清晰度和完整性。Lossless Scaling(游戏无损缩放工具)可以消除游戏的边框，保持游戏的形象清晰，给你带来更好的体验。
+        </p>
+        <img src="images/1.jpg" alt="">
+      </div>
+    </section>
+
+    <!-- 3. 功能亮点 -->
+    <section id="features" class="section-pad section-anchor">
+      <div class="container">
+        <h2 class="section-title h3">功能亮点</h2>
+        <p class="section-desc">帧生成、分辨率缩放、多算法与可定制配置，覆盖核心需求。</p>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="card h-100 feature-card card-soft">
+              <div class="card-body">
+                <div class="mb-3 text-primary fs-2"><i class="bi bi-lightning-charge"></i></div>
+                <h5 class="card-title">帧生成</h5>
+                <p class="card-text">默认 2× 至 4× 倍增，支持更高自定义倍率。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card h-100 feature-card card-soft">
+              <div class="card-body">
+                <div class="mb-3 text-primary fs-2"><i class="bi bi-aspect-ratio"></i></div>
+                <h5 class="card-title">分辨率缩放</h5>
+                <p class="card-text">LS1 等算法让 720P 画面缩放到 1080P 观感。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card h-100 feature-card card-soft">
+              <div class="card-body">
+                <div class="mb-3 text-primary fs-2"><i class="bi bi-layers"></i></div>
+                <h5 class="card-title">多算法</h5>
+                <p class="card-text">支持 LSFG3.0、LS1 等，持续优化更新。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card h-100 feature-card card-soft">
+              <div class="card-body">
+                <div class="mb-3 text-primary fs-2"><i class="bi bi-sliders"></i></div>
+                <h5 class="card-title">自定义配置</h5>
+                <p class="card-text">按不同应用保存配置，快捷键一键调用。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 适用场景 / 优势 -->
+    <section id="scenarios" class="section-pad muted-section section-anchor">
+      <div class="container text-center">
+        <h2 class="section-title h3">适用场景 / 优势</h2>
+        <p class="section-desc">为不同用户群与设备特性提供针对性的优化方向。</p>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="scenario-card d-flex align-items-center gap-3">
+              <div class="scenario-icon"><i class="bi bi-cpu"></i></div>
+              <div>
+                <h5 class="mb-2">硬件受限用户</h5>
+                <p class="mb-0">在 APU/核显或掌机设备上，配合插帧与缩放获得更顺滑的体验。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="scenario-card d-flex align-items-center gap-3">
+              <div class="scenario-icon"><i class="bi bi-controller"></i></div>
+              <div>
+                <h5 class="mb-2">老游戏玩家</h5>
+                <p class="mb-0">提升经典游戏的分辨率与帧率，保留原味同时更顺滑。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="scenario-card d-flex align-items-center gap-3">
+              <div class="scenario-icon"><i class="bi bi-palette"></i></div>
+              <div>
+                <h5 class="mb-2">像素艺术爱好者</h5>
+                <p class="mb-0">在高分屏上获得更细腻观感，同时保持帧数充足。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. 使用限制 / 注意事项 -->
+    <section id="cautions" class="section-pad warning-section section-anchor">
+      <div class="container text-center">
+        <h2 class="section-title h3"><span class="me-2">⚠️</span>使用限制 / 注意事项</h2>
+        <p class="section-desc">使用前请先了解限制与注意事项，以获得稳定体验。</p>
+        <ol class="list-unstyled mb-0">
+          <li>真实帧率过低（如 15fps）会导致画面瑕疵与输入延迟增大。</li>
+          <li>建议真实帧率 ≥ 30fps，以平衡流畅度与交互体验。</li>
+          <li>垂直同步可能锁定在桌面刷新率（如 60Hz），必要时关闭。</li>
+          <li>不同游戏对算法支持度各异，建议先进行窗口模式测试。</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 6. 用户评价 / 社区反馈 -->
+    <section id="reviews" class="section-pad section-anchor">
+      <div class="container">
+        <h2 class="section-title h3">用户评价 / 社区反馈</h2>
+        <p class="section-desc">来自用户的真实体验与反馈，帮助你快速了解效果。</p>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <p class="mb-2">很好的视频补帧软件，看视频开×4补帧特别丝滑，Anime4k也适合看1080P片源的动漫。
+与其说拿来玩游戏，看视频才是正确用法</p>
+                <small class="text-secondary">用户 A · 视频用户</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <p class="mb-2">祝屏幕前的各位，有朝一日不需要拼好帧也能流畅玩上自己喜欢的游戏</p>
+                <small class="text-secondary">用户 B · 囊中羞涩的游戏爱好者</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <p class="mb-2">不太适合打游戏 但很适合看毛片 可以把毛片的帧率补高看更丝滑的动作</p>
+                <small class="text-secondary">用户 C · 日本动作片爱好者</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. 教程 / 快速上手指南 -->
+    <section id="guide" class="section-pad muted-section section-anchor">
+      <div class="container">
+        <h2 class="section-title h3">快速上手指南</h2>
+        <p class="section-desc">按步骤快速上手，几分钟完成基础配置。</p>
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item">安装并运行 Lossless Scaling（建议以窗口或无边框模式启动目标应用）。</li>
+          <li class="list-group-item">在帧生成中选择 <strong>LSFG3.0</strong>，选择 2×/3×/4× 或自定义倍数。</li>
+          <li class="list-group-item">在缩放中选择 <strong>LS1</strong>，如需从 720P 缩放至 1080P 可设 1.5×。</li>
+          <li class="list-group-item">可在设置中自定义快捷键（默认 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>）。</li>
+          <li class="list-group-item">必要时关闭垂直同步以避免被刷新率锁定。</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 8. 下载链接 -->
+    <section id="download" class="section-pad faq-section section-anchor">
+      <div class="container text-center">
+        <h2 class="section-title h3">下载链接</h2>
+        <p class="section-desc">获取最新版本，快速体验插帧与缩放带来的流畅提升。</p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a class="btn btn-primary btn-lg" href="https://store.steampowered.com/app/993090/Lossless_Scaling/" target="_blank" aria-label="Steam购买Lossless Scaling">
+            <i class="bi bi-steam"></i> Steam购买
+          </a>
+          <a class="btn btn-success btn-lg" href="https://pan.quark.cn/s/3a4fbfe2aa45" target="_blank" aria-label="夸克网盘绿色版下载">
+            <i class="bi bi-cloud-download"></i> 夸克网盘下载
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. 常见问答 -->
+    <section id="faq" class="section-pad faq-section section-anchor">
+      <div class="container">
+        <h2 class="section-title h3">常见问答（FAQ）</h2>
+        <p class="section-desc">为你提供快速支持与解答，轻松解决使用中的疑问。</p>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="q1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="true" aria-controls="a1">
+                如何安装与启动？
+              </button>
+            </h2>
+            <div id="a1" class="accordion-collapse collapse show" aria-labelledby="q1" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">解压后运行主程序，确保目标应用为窗口或无边框模式以获得最佳效果。</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="q2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="a2">
+                建议的最低真实帧率？
+              </button>
+            </h2>
+            <div id="a2" class="accordion-collapse collapse" aria-labelledby="q2" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">建议真实帧率不低于 30fps，以避免明显输入延迟与画面瑕疵。</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="q3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="a3">
+                是否需要关闭垂直同步？
+              </button>
+            </h2>
+            <div id="a3" class="accordion-collapse collapse" aria-labelledby="q3" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">如遇到帧率被锁定在刷新率（如 60Hz），建议关闭垂直同步。</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="q4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="a4">
+                视频与模拟器是否支持？
+              </button>
+            </h2>
+            <div id="a4" class="accordion-collapse collapse" aria-labelledby="q4" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">支持，窗口化或无边框运行的程序均可受益，包括视频播放器与各类模拟器。</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. 底部版权 / 联系我们 -->
+    <footer class="py-4" style="background:#222; color:#fff;">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center">
+          <div class="mb-2 mb-md-0">
+            <small>© 2025 小黄鸭拼好帧</small>
+            <div class="mt-1 text-light">
+              <small>免责声明：本站仅提供软件介绍及使用方法，下载地址均搜集自互联网，请自行甄别风险。</small>
+            </div>
+          </div>
+          <div class="d-flex gap-3">
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a id="backToTop" href="#hero" class="btn btn-primary" aria-label="返回顶部">↑</a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener('scroll', function(){
+        var btn = document.getElementById('backToTop');
+        if (!btn) return;
+        if (window.scrollY > 300) btn.classList.add('show'); else btn.classList.remove('show');
+      });
+    </script>
+  </body>
+</html>

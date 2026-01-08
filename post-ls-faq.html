@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>小黄鸭常见问题解答（持续更新） - Lossless Scaling FAQ</title>
+    <meta name="description" content="汇总小黄鸭（Lossless Scaling）在插帧、HDR、窗口化、撕裂、只超分等常见问题与解决方案，持续更新。">
+    <meta name="keywords" content="Lossless Scaling FAQ, 小黄鸭 常见问题, 插帧, HDR, 录屏, 窗口化, 撕裂">
+    <link rel="canonical" href="https://www.losslessscal.com/post-ls-faq.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="小黄鸭常见问题解答（持续更新）">
+    <meta property="og:description" content="覆盖显示帧数、HDR自动开启、窗口化黑屏、字幕撕裂、只超分不补帧等问题的处理建议。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.losslessscal.com/post-ls-faq.html">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <!-- BlogPosting JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "小黄鸭常见问题解答（持续更新）",
+      "description": "覆盖显示帧数、HDR自动开启、窗口化黑屏、字幕撕裂、只超分不补帧等问题的处理建议。",
+      "datePublished": "2025-11-08",
+      "dateModified": "2025-11-08",
+      "author": {"@type": "Person", "name": "编辑部"},
+      "publisher": {"@type": "Organization", "name": "Lossless Scaling"},,
+      "url": "https://www.losslessscal.com/post-ls-faq.html"
+    }
+    </script>
+  </head>
+  <body>
+    <!-- 导航 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="/">小黄鸭拼好帧</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="切换导航">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="/">主页</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">博客</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <nav aria-label="面包屑" class="mb-3">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">主页</a></li>
+          <li class="breadcrumb-item"><a href="blog.html">博客</a></li>
+          <li class="breadcrumb-item active" aria-current="page">常见问题解答</li>
+        </ol>
+      </nav>
+
+      <article class="mx-auto" style="max-width: 900px;">
+        <header class="mb-4">
+          <h1 class="h2">小黄鸭常见问题解答（持续更新）</h1>
+          <p class="text-secondary">作者：编辑部 · 发布于 2025-11-08</p>
+        </header>
+
+        <section class="mb-4">
+          <p>本文整理社区中关于小黄鸭（Lossless Scaling）的高频问题与处理建议，覆盖插帧识别、HDR、窗口化、撕裂、仅超分等场景。遇到问题时可按下列条目逐一排查。</p>
+        </section>
+
+        <section class="mb-4">
+          <h2 class="h5">问题与解答</h2>
+          <div class="list-group">
+            <div class="list-group-item">
+              <p class="mb-1"><strong>问：</strong>开启后显示 180/180（显示器帧数），不是游戏窗口帧数，录屏和软件都关了，换显示器后就这样？</p>
+              <p class="mb-0"><strong>答：</strong>后台有录屏或覆盖程序导致画面被占用，小黄鸭无法识别补帧。请在显卡驱动中找到录屏相关功能并禁用，需要时再开启。</p>
+            </div>
+            <div class="list-group-item">
+              <p class="mb-1"><strong>问：</strong>每次开小黄鸭都自动把 HDR 打开，关闭 HDR 支持也还是会有？</p>
+              <p class="mb-0"><strong>答：</strong>在 Windows 显示设置中关闭“自动管理颜色”，即可阻止系统自动开启 HDR。</p>
+            </div>
+            <div class="list-group-item">
+              <p class="mb-1"><strong>问：</strong>《飙酷车神：轰鸣盛典》锁 30 帧，用小黄鸭补帧；2K 无边框原生分辨率识别不到，窗口化 1080p 可补但 HDR 画面灰？</p>
+              <p class="mb-0"><strong>答：</strong>打开游戏的垂直同步（V-Sync）后可正常补帧，画面灰的问题随之缓解。</p>
+            </div>
+            <div class="list-group-item">
+              <p class="mb-1"><strong>问：</strong>看视频时某些场景出现画面撕裂，字幕最明显，如何解决？</p>
+              <p class="mb-0"><strong>答：</strong>适当降低目标补帧帧数。比如原本 120fps 撕裂明显时，可改为 90fps，会好一些；改为 60fps 基本没有割裂感。</p>
+            </div>
+            <div class="list-group-item">
+              <p class="mb-1"><strong>问：</strong>如何只进行超分不补帧？老游戏内显示 500+ 帧，只想提升清晰度。</p>
+              <p class="mb-0"><strong>答：</strong>将锐化拉满并打开垂直同步，实现分辨率提升而不进行补帧。</p>
+            </div>
+            <div class="list-group-item">
+              <p class="mb-1"><strong>问：</strong>游戏锁 30 帧、2 倍插帧本来正常，中途突然原生帧数变成显示器刷新率，小黄鸭仍 2 倍插帧但流畅度大幅下降怎么办？</p>
+              <p class="mb-0"><strong>答：</strong>这是一次性补帧失败导致的。开启兼容性模式：右键小黄鸭 → 属性 → 兼容模式。</p>
+            </div>
+            <div class="list-group-item">
+              <p class="mb-1"><strong>问：</strong>小黄鸭如何窗口化游戏？窗口化后背景黑屏？</p>
+              <p class="mb-0"><strong>答：</strong>使用小黄鸭自带的缩放功能即可全屏显示。最佳做法是：游戏设为无边框窗口全屏，点对点显示，再启动小黄鸭。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-4">
+          <h2 class="h5">持续更新</h2>
+          <p>本文将根据用户反馈持续完善。</p>
+        </section>
+
+        <hr class="my-4">
+        <div class="d-flex justify-content-between">
+          <a href="blog.html" class="btn btn-outline-secondary">返回博客</a>
+          <a href="/" class="btn btn-primary">回到主页</a>
+        </div>
+      </article>
+    </main>
+
+    <footer class="py-4 border-top">
+      <div class="container text-center">
+        <small class="text-secondary">© 2025 小黄鸭拼好帧</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>
